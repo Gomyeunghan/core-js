@@ -6,3 +6,4 @@ export * from './math/index.js';
 export * from './error/index.js';
 export * from './animation/index.js';
 export * from './utils/Han.js';
+export * from './utils/storage.js'
