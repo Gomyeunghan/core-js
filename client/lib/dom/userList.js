@@ -21,11 +21,16 @@ function createUserCard({
       </article>
   `;
   return template;
-}
+} //객체로 인자를 넣어줌 기본값 tiger 로 넣어서 만약 인자 없을경우 기본값으로 설정됨.
+//템플릿 변수 반환함. 호출되면 템플릿 에 써있는 html 이 함수자리에 반환됨.
+//구조분해 할당해서 위치에 상관없이 키값으로 데이터 찾아서 넣음
 
 export function renderUserCard(target, data) {
   insertLast(target, createUserCard(data));
-}
+} //target = 찾을 노드 // data는 노드에 넣을값
+// 랜더유저카드 함수
+// 원하는 node에 받은 데이터를 넣고싶을때 사용
+//현재 userCardList 노드에 해당 html 넣음 createUserCard 로 html 템플릿 생성하고 그값 넣음
 
 function createSpinner(
   size = 100,

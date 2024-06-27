@@ -83,7 +83,8 @@ tiger.post = (url, body, options) => {
     body: JSON.stringify(body),
   });
 };
-
+// 해당 데이터 지우기 위한 함수
+//데이터가 있는 url 을 넣고 뒤에는 지울 데이터를 객체로 넣음 헤더나 데이터 값을 넣음 여기서는 delete 가 메서드로 사용되어 지우기 위한 값을 url 뒤에 넣음
 tiger.delete = (url, options) => {
   return tiger({
     method: 'DELETE',
